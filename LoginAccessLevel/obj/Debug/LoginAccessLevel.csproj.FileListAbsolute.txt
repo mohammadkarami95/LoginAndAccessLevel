@@ -1,0 +1,23 @@
+c:\users\mohammad\documents\visual studio 2013\Projects\LoginAccessLevel\LoginAccessLevel\bin\Debug\LoginAccessLevel.exe.config
+c:\users\mohammad\documents\visual studio 2013\Projects\LoginAccessLevel\LoginAccessLevel\bin\Debug\LoginAccessLevel.exe
+c:\users\mohammad\documents\visual studio 2013\Projects\LoginAccessLevel\LoginAccessLevel\bin\Debug\LoginAccessLevel.pdb
+c:\users\mohammad\documents\visual studio 2013\Projects\LoginAccessLevel\LoginAccessLevel\obj\Debug\LoginAccessLevel.csprojResolveAssemblyReference.cache
+c:\users\mohammad\documents\visual studio 2013\Projects\LoginAccessLevel\LoginAccessLevel\obj\Debug\LoginAccessLevel.Form1.resources
+c:\users\mohammad\documents\visual studio 2013\Projects\LoginAccessLevel\LoginAccessLevel\obj\Debug\LoginAccessLevel.Properties.Resources.resources
+c:\users\mohammad\documents\visual studio 2013\Projects\LoginAccessLevel\LoginAccessLevel\obj\Debug\LoginAccessLevel.csproj.GenerateResource.Cache
+c:\users\mohammad\documents\visual studio 2013\Projects\LoginAccessLevel\LoginAccessLevel\obj\Debug\LoginAccessLevel.exe
+c:\users\mohammad\documents\visual studio 2013\Projects\LoginAccessLevel\LoginAccessLevel\obj\Debug\LoginAccessLevel.pdb
+E:\Git_Projects\C#\LoginAccessLevel\LoginAccessLevel\bin\Debug\LoginAccessLevel.exe.config
+E:\Git_Projects\C#\LoginAccessLevel\LoginAccessLevel\obj\Debug\LoginAccessLevel.exe
+E:\Git_Projects\C#\LoginAccessLevel\LoginAccessLevel\obj\Debug\LoginAccessLevel.pdb
+E:\Git_Projects\C#\LoginAccessLevel\LoginAccessLevel\bin\Debug\LoginAccessLevel.exe
+E:\Git_Projects\C#\LoginAccessLevel\LoginAccessLevel\bin\Debug\LoginAccessLevel.pdb
+E:\Git_Projects\C#\LoginAccessLevel\LoginAccessLevel\obj\Debug\LoginAccessLevel.csprojResolveAssemblyReference.cache
+E:\Git_Projects\C#\LoginAccessLevel\LoginAccessLevel\obj\Debug\LoginAccessLevel.frmMain.resources
+E:\Git_Projects\C#\LoginAccessLevel\LoginAccessLevel\obj\Debug\LoginAccessLevel.frmAddAdmin.resources
+E:\Git_Projects\C#\LoginAccessLevel\LoginAccessLevel\obj\Debug\LoginAccessLevel.frmAddUser.resources
+E:\Git_Projects\C#\LoginAccessLevel\LoginAccessLevel\obj\Debug\LoginAccessLevel.frmEditProfile.resources
+E:\Git_Projects\C#\LoginAccessLevel\LoginAccessLevel\obj\Debug\LoginAccessLevel.frmForgetPass.resources
+E:\Git_Projects\C#\LoginAccessLevel\LoginAccessLevel\obj\Debug\LoginAccessLevel.frmLogin.resources
+E:\Git_Projects\C#\LoginAccessLevel\LoginAccessLevel\obj\Debug\LoginAccessLevel.Properties.Resources.resources
+E:\Git_Projects\C#\LoginAccessLevel\LoginAccessLevel\obj\Debug\LoginAccessLevel.csproj.GenerateResource.Cache
