@@ -25,7 +25,7 @@ namespace LoginAccessLevel
         private void frmMain_Load(object sender, EventArgs e)
         {
             frmLogin login = new frmLogin();
-            login.Show();
+            login.ShowDialog();
         }
     }
 }

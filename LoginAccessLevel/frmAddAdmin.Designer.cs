@@ -36,24 +36,24 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtNameFamily = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtConfirmation = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtMobileNumber = new System.Windows.Forms.TextBox();
+            this.txtAnswerQuestion = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.cmbSecurityQuestion = new System.Windows.Forms.ComboBox();
+            this.pbxCaptcha = new System.Windows.Forms.PictureBox();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnCaptchaSpeech = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.txtCaptchaCode = new System.Windows.Forms.TextBox();
+            this.btnAddToDataBase = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCaptcha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,54 +111,61 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "شماره موبایل:";
             // 
-            // textBox1
+            // txtNameFamily
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(336, 20);
-            this.textBox1.TabIndex = 6;
+            this.txtNameFamily.Location = new System.Drawing.Point(12, 12);
+            this.txtNameFamily.Name = "txtNameFamily";
+            this.txtNameFamily.Size = new System.Drawing.Size(336, 20);
+            this.txtNameFamily.TabIndex = 6;
             // 
-            // textBox2
+            // txtUserName
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 38);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(336, 20);
-            this.textBox2.TabIndex = 7;
+            this.txtUserName.Location = new System.Drawing.Point(12, 38);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(336, 20);
+            this.txtUserName.TabIndex = 7;
             // 
-            // textBox3
+            // txtPassword
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 64);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(336, 20);
-            this.textBox3.TabIndex = 8;
+            this.txtPassword.Location = new System.Drawing.Point(12, 64);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(336, 20);
+            this.txtPassword.TabIndex = 8;
             // 
-            // textBox4
+            // txtConfirmation
             // 
-            this.textBox4.Location = new System.Drawing.Point(12, 90);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(336, 20);
-            this.textBox4.TabIndex = 9;
+            this.txtConfirmation.AutoCompleteCustomSource.AddRange(new string[] {
+            "نام کتاب مورد علاقه شما چیست ؟",
+            "نام غذی مورد علاقه شما چیست ؟",
+            "مکان تولد شما کدام شهر هست ؟",
+            "مکان مورد علاقه مشا کجاست ؟",
+            "کشور مورد علاقه شما چیست ؟",
+            "اهنگ مورد علاقه مشا چیست؟"});
+            this.txtConfirmation.Location = new System.Drawing.Point(12, 90);
+            this.txtConfirmation.Name = "txtConfirmation";
+            this.txtConfirmation.Size = new System.Drawing.Size(336, 20);
+            this.txtConfirmation.TabIndex = 9;
             // 
-            // textBox5
+            // txtEmail
             // 
-            this.textBox5.Location = new System.Drawing.Point(12, 116);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(336, 20);
-            this.textBox5.TabIndex = 10;
+            this.txtEmail.Location = new System.Drawing.Point(12, 116);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(336, 20);
+            this.txtEmail.TabIndex = 10;
             // 
-            // textBox6
+            // txtMobileNumber
             // 
-            this.textBox6.Location = new System.Drawing.Point(12, 142);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(336, 20);
-            this.textBox6.TabIndex = 11;
+            this.txtMobileNumber.Location = new System.Drawing.Point(12, 142);
+            this.txtMobileNumber.Name = "txtMobileNumber";
+            this.txtMobileNumber.Size = new System.Drawing.Size(336, 20);
+            this.txtMobileNumber.TabIndex = 11;
             // 
-            // textBox7
+            // txtAnswerQuestion
             // 
-            this.textBox7.Location = new System.Drawing.Point(12, 195);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(336, 20);
-            this.textBox7.TabIndex = 12;
+            this.txtAnswerQuestion.Location = new System.Drawing.Point(12, 195);
+            this.txtAnswerQuestion.Name = "txtAnswerQuestion";
+            this.txtAnswerQuestion.Size = new System.Drawing.Size(336, 20);
+            this.txtAnswerQuestion.TabIndex = 12;
             // 
             // label7
             // 
@@ -178,41 +185,51 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "پاسخ سوال امنیتی:";
             // 
-            // comboBox1
+            // cmbSecurityQuestion
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 168);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(336, 21);
-            this.comboBox1.TabIndex = 15;
+            this.cmbSecurityQuestion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSecurityQuestion.FormattingEnabled = true;
+            this.cmbSecurityQuestion.Items.AddRange(new object[] {
+            "نام غذای مورد علاقه شما چیست؟",
+            "نام مکان مورد علاقه شما چیست ؟",
+            "اسم مورد علاقه شما چیست؟",
+            "کشور مورد علاقه شما چیست ؟",
+            "نام معلم اول دبیرستان شما چیست؟",
+            "زمینه ورزشی مورد علاقه شما چیست؟"});
+            this.cmbSecurityQuestion.Location = new System.Drawing.Point(12, 168);
+            this.cmbSecurityQuestion.Name = "cmbSecurityQuestion";
+            this.cmbSecurityQuestion.Size = new System.Drawing.Size(336, 21);
+            this.cmbSecurityQuestion.TabIndex = 15;
             // 
-            // pictureBox1
+            // pbxCaptcha
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 221);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 70);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
+            this.pbxCaptcha.Location = new System.Drawing.Point(12, 221);
+            this.pbxCaptcha.Name = "pbxCaptcha";
+            this.pbxCaptcha.Size = new System.Drawing.Size(150, 70);
+            this.pbxCaptcha.TabIndex = 16;
+            this.pbxCaptcha.TabStop = false;
             // 
-            // button1
+            // btnRefresh
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(187, 221);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 32);
-            this.button1.TabIndex = 17;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRefresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.BackgroundImage")));
+            this.btnRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnRefresh.Location = new System.Drawing.Point(187, 221);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(161, 32);
+            this.btnRefresh.TabIndex = 17;
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // button2
+            // btnCaptchaSpeech
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Location = new System.Drawing.Point(187, 259);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(161, 32);
-            this.button2.TabIndex = 17;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCaptchaSpeech.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCaptchaSpeech.BackgroundImage")));
+            this.btnCaptchaSpeech.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCaptchaSpeech.Location = new System.Drawing.Point(187, 259);
+            this.btnCaptchaSpeech.Name = "btnCaptchaSpeech";
+            this.btnCaptchaSpeech.Size = new System.Drawing.Size(161, 32);
+            this.btnCaptchaSpeech.TabIndex = 17;
+            this.btnCaptchaSpeech.UseVisualStyleBackColor = true;
+            this.btnCaptchaSpeech.Click += new System.EventHandler(this.btnCaptchaSpeech_Click);
             // 
             // label9
             // 
@@ -223,22 +240,22 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "کد امنیتی:";
             // 
-            // textBox8
+            // txtCaptchaCode
             // 
-            this.textBox8.Location = new System.Drawing.Point(12, 297);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(278, 20);
-            this.textBox8.TabIndex = 19;
+            this.txtCaptchaCode.Location = new System.Drawing.Point(12, 297);
+            this.txtCaptchaCode.Name = "txtCaptchaCode";
+            this.txtCaptchaCode.Size = new System.Drawing.Size(278, 20);
+            this.txtCaptchaCode.TabIndex = 19;
             // 
-            // button3
+            // btnAddToDataBase
             // 
-            this.button3.Location = new System.Drawing.Point(12, 335);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(336, 23);
-            this.button3.TabIndex = 20;
-            this.button3.Text = "اضافه کردن";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnAddToDataBase.Location = new System.Drawing.Point(12, 335);
+            this.btnAddToDataBase.Name = "btnAddToDataBase";
+            this.btnAddToDataBase.Size = new System.Drawing.Size(336, 23);
+            this.btnAddToDataBase.TabIndex = 20;
+            this.btnAddToDataBase.Text = "اضافه کردن";
+            this.btnAddToDataBase.UseVisualStyleBackColor = true;
+            this.btnAddToDataBase.Click += new System.EventHandler(this.button3_Click);
             // 
             // errorProvider1
             // 
@@ -249,22 +266,22 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(466, 370);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.btnAddToDataBase);
+            this.Controls.Add(this.txtCaptchaCode);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.btnCaptchaSpeech);
+            this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.pbxCaptcha);
+            this.Controls.Add(this.cmbSecurityQuestion);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtAnswerQuestion);
+            this.Controls.Add(this.txtMobileNumber);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtConfirmation);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUserName);
+            this.Controls.Add(this.txtNameFamily);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -274,7 +291,8 @@
             this.Name = "frmAddAdmin";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "ثبت نام مدیر شرکت";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.frmAddAdmin_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCaptcha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -289,22 +307,22 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtNameFamily;
+        private System.Windows.Forms.TextBox txtUserName;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtConfirmation;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtMobileNumber;
+        private System.Windows.Forms.TextBox txtAnswerQuestion;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox cmbSecurityQuestion;
+        private System.Windows.Forms.PictureBox pbxCaptcha;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnCaptchaSpeech;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txtCaptchaCode;
+        private System.Windows.Forms.Button btnAddToDataBase;
         private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

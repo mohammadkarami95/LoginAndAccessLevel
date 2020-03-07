@@ -22,7 +22,13 @@ namespace LoginAccessLevel
         {
             DataTable dt = new DataTable();
             SqlDataAdapter data = new SqlDataAdapter("select * from tblSundry",con);
-            
+            data.Fill(dt);
+            bool checkAdminReg = (bool)dt.Rows[0]["RegisteredAdminPass"];
+            if (checkAdminReg == false)
+            {
+                frmAddAdmin admin = new frmAddAdmin();
+                admin.ShowDialog();
+            }
         }
     }
 }
