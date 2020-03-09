@@ -18,49 +18,7 @@ namespace LoginAccessLevel
         }
         SqlConnection con = new SqlConnection("Data Source=DESKTOP-JHATL10\\SQL2019;Initial Catalog=DBLogin;Integrated Security=True");
 
-        //CAPTCHA CODE
-        string captcha;
-        System.Speech.Synthesis.SpeechSynthesizer speech = new System.Speech.Synthesis.SpeechSynthesizer();
-        private void SpeechCaptcha()
-        {
-            speech.Volume = 100;
-            foreach (char objChar in captcha.ToCharArray())
-            {
-                speech.Speak(objChar.ToString());
-            }
-        }
-
-        private string RandomNumber()
-        {
-            Random rnd = new Random();
-            return rnd.Next(10000, 99999).ToString();
-        }
-        private void RefreshCaptcha()
-        {
-            Login.CaptchaImage captchaImage = new Login.CaptchaImage(RandomNumber(), 140, 60);
-            pbxCaptcha.Image = captchaImage.Image;
-            captcha = captchaImage.Text;
-        }
-        //CAPTCHA CODE ADDED
-
-
-        /// <summary>
         /// ADD ADMIN REGISTERATION TO SQL SERVER
-        /// </summary>
-        /// <param name="input"></param>
-        /// <returns></returns>
-        private string CalculateMD5Hash(string input)
-        {
-            System.Security.Cryptography.MD5 md5 = System.Security.Cryptography.MD5.Create();
-            byte[] inputByte = System.Text.Encoding.ASCII.GetBytes(input);
-            byte[] hash = md5.ComputeHash(inputByte);
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < hash.Length; i++)
-            {
-                sb.Append(hash[i].ToString("x2"));
-            }
-            return sb.ToString().ToLower();
-        }
         private void AddAdmin()
         {
             SqlCommand cmd_AddAdmin = new SqlCommand();
@@ -68,11 +26,11 @@ namespace LoginAccessLevel
             cmd_AddAdmin.Connection = con;
             cmd_AddAdmin.Parameters.Add("@First_Name",SqlDbType.NVarChar).Value = txtNameFamily.Text;
             cmd_AddAdmin.Parameters.Add("@User_Name",SqlDbType.NVarChar).Value = txtUserName.Text;
-            cmd_AddAdmin.Parameters.Add("@User_Pass",SqlDbType.NVarChar).Value = CalculateMD5Hash(txtPassword.Text);
+            cmd_AddAdmin.Parameters.Add("@User_Pass",SqlDbType.NVarChar).Value = Security.CalculateMD5Hash(txtPassword.Text);
             cmd_AddAdmin.Parameters.Add("@Mobile_Number",SqlDbType.NVarChar).Value = txtMobileNumber.Text;
             cmd_AddAdmin.Parameters.Add("@Email_Address",SqlDbType.NVarChar).Value = txtEmail.Text;
             cmd_AddAdmin.Parameters.Add("@Security_Question",SqlDbType.NVarChar).Value = cmbSecurityQuestion.Text;
-            cmd_AddAdmin.Parameters.Add("@Answer_Question", SqlDbType.NVarChar).Value = CalculateMD5Hash(txtAnswerQuestion.Text);
+            cmd_AddAdmin.Parameters.Add("@Answer_Question", SqlDbType.NVarChar).Value = Security.CalculateMD5Hash(txtAnswerQuestion.Text);
             cmd_AddAdmin.ExecuteNonQuery();
         }
         private void AccessLevel(string userName)
@@ -94,13 +52,11 @@ namespace LoginAccessLevel
             cmd_RegAdmin.Parameters.Add("@RegisteredAdminPass", SqlDbType.Bit).Value = true;
             cmd_RegAdmin.ExecuteNonQuery();
         }
-        /// <summary>
-        /// END OF ADD TO ADMIN REGIRSTERATION METHODS
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        // END OF ADD TO ADMIN REGIRSTERATION METHODS
+    
         private void button3_Click(object sender, EventArgs e)
         {
+            //Login.CaptchaImage captcha = new Login.CaptchaImage();
             errorProvider1.Clear();
             if (string.IsNullOrWhiteSpace(txtNameFamily.Text))
                 errorProvider1.SetError(txtNameFamily, "لطفا نام و نام خانوادگی را وارد کنید");
@@ -115,7 +71,7 @@ namespace LoginAccessLevel
                 errorProvider1.SetError(txtMobileNumber, "لطفا شماره موبایل را وارد کنید");
             else if (string.IsNullOrWhiteSpace(txtAnswerQuestion.Text))
                 errorProvider1.SetError(txtAnswerQuestion, "لطفا به سوال امنیتی پاسخ دهید");
-            else if (txtCaptchaCode.Text != captcha)
+            else if (txtCaptchaCode.Text != Login.CaptchaImage.Captcha)
                 errorProvider1.SetError(txtCaptchaCode, "لطفا کد کپچا را وارد کنید");
             else
             {
@@ -131,18 +87,21 @@ namespace LoginAccessLevel
 
         private void frmAddAdmin_Load(object sender, EventArgs e)
         {
-            RefreshCaptcha();
+            Login.CaptchaImage captcha = new Login.CaptchaImage();
+            captcha.RefreshCaptcha(pbxCaptcha);
             cmbSecurityQuestion.SelectedIndex = 0;
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            RefreshCaptcha();
+            Login.CaptchaImage captcha = new Login.CaptchaImage();
+            captcha.RefreshCaptcha(pbxCaptcha);
         }
 
         private void btnCaptchaSpeech_Click(object sender, EventArgs e)
         {
-            SpeechCaptcha();
+            Login.CaptchaImage captcha = new Login.CaptchaImage();
+            captcha.SpeechCaptcha();
         }
     }
 }

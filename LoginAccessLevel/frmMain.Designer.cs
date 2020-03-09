@@ -29,157 +29,174 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.lblUserName = new System.Windows.Forms.Label();
+            this.gbxAddUser = new System.Windows.Forms.GroupBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.gbxChangeBackColor = new System.Windows.Forms.GroupBox();
+            this.btnDefultColor = new System.Windows.Forms.Button();
+            this.btnGreen = new System.Windows.Forms.Button();
+            this.btnRed = new System.Windows.Forms.Button();
+            this.btnBlue = new System.Windows.Forms.Button();
+            this.gbxEdit = new System.Windows.Forms.GroupBox();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.gbxCalculation = new System.Windows.Forms.GroupBox();
+            this.txtResult = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnJam = new System.Windows.Forms.Button();
+            this.btnTafrigh = new System.Windows.Forms.Button();
+            this.btnZarb = new System.Windows.Forms.Button();
+            this.btnTaghsim = new System.Windows.Forms.Button();
+            this.txtNumberTwo = new System.Windows.Forms.TextBox();
+            this.txtNumberOne = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
+            this.gbxAddUser.SuspendLayout();
+            this.gbxChangeBackColor.SuspendLayout();
+            this.gbxEdit.SuspendLayout();
+            this.gbxCalculation.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.lblUserName);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(531, 52);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // label1
+            // lblUserName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(241, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Location = new System.Drawing.Point(241, 16);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(35, 13);
+            this.lblUserName.TabIndex = 0;
+            this.lblUserName.Text = "label1";
             // 
-            // groupBox2
+            // gbxAddUser
             // 
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Location = new System.Drawing.Point(332, 70);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox2.Size = new System.Drawing.Size(211, 70);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "اضافه کردن کاربر جدید";
+            this.gbxAddUser.Controls.Add(this.btnAdd);
+            this.gbxAddUser.Location = new System.Drawing.Point(332, 70);
+            this.gbxAddUser.Name = "gbxAddUser";
+            this.gbxAddUser.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.gbxAddUser.Size = new System.Drawing.Size(211, 70);
+            this.gbxAddUser.TabIndex = 1;
+            this.gbxAddUser.TabStop = false;
+            this.gbxAddUser.Text = "اضافه کردن کاربر جدید";
             // 
-            // button1
+            // btnAdd
             // 
-            this.button1.Location = new System.Drawing.Point(18, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 32);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "برای اضافه کردن کلیک کنید";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAdd.Location = new System.Drawing.Point(18, 19);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(176, 32);
+            this.btnAdd.TabIndex = 2;
+            this.btnAdd.Text = "برای اضافه کردن کلیک کنید";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // groupBox3
+            // gbxChangeBackColor
             // 
-            this.groupBox3.Controls.Add(this.button4);
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.button2);
-            this.groupBox3.Location = new System.Drawing.Point(332, 146);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox3.Size = new System.Drawing.Size(211, 180);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "تغییر رنگ پس زمینه برنامه";
+            this.gbxChangeBackColor.Controls.Add(this.btnDefultColor);
+            this.gbxChangeBackColor.Controls.Add(this.btnGreen);
+            this.gbxChangeBackColor.Controls.Add(this.btnRed);
+            this.gbxChangeBackColor.Controls.Add(this.btnBlue);
+            this.gbxChangeBackColor.Location = new System.Drawing.Point(332, 146);
+            this.gbxChangeBackColor.Name = "gbxChangeBackColor";
+            this.gbxChangeBackColor.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.gbxChangeBackColor.Size = new System.Drawing.Size(211, 180);
+            this.gbxChangeBackColor.TabIndex = 2;
+            this.gbxChangeBackColor.TabStop = false;
+            this.gbxChangeBackColor.Text = "تغییر رنگ پس زمینه برنامه";
             // 
-            // button4
+            // btnDefultColor
             // 
-            this.button4.Location = new System.Drawing.Point(18, 58);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(176, 23);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "سبر";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnDefultColor.Location = new System.Drawing.Point(18, 116);
+            this.btnDefultColor.Name = "btnDefultColor";
+            this.btnDefultColor.Size = new System.Drawing.Size(176, 23);
+            this.btnDefultColor.TabIndex = 1;
+            this.btnDefultColor.Text = "رنگ تست";
+            this.btnDefultColor.UseVisualStyleBackColor = true;
+            this.btnDefultColor.Click += new System.EventHandler(this.btnDefultColor_Click);
             // 
-            // button3
+            // btnGreen
             // 
-            this.button3.Location = new System.Drawing.Point(18, 87);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(176, 23);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "قرمز";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnGreen.Location = new System.Drawing.Point(18, 58);
+            this.btnGreen.Name = "btnGreen";
+            this.btnGreen.Size = new System.Drawing.Size(176, 23);
+            this.btnGreen.TabIndex = 0;
+            this.btnGreen.Text = "سبر";
+            this.btnGreen.UseVisualStyleBackColor = true;
+            this.btnGreen.Click += new System.EventHandler(this.btnGreen_Click);
             // 
-            // button2
+            // btnRed
             // 
-            this.button2.Location = new System.Drawing.Point(18, 29);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(176, 23);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "ابی";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRed.Location = new System.Drawing.Point(18, 87);
+            this.btnRed.Name = "btnRed";
+            this.btnRed.Size = new System.Drawing.Size(176, 23);
+            this.btnRed.TabIndex = 0;
+            this.btnRed.Text = "قرمز";
+            this.btnRed.UseVisualStyleBackColor = true;
+            this.btnRed.Click += new System.EventHandler(this.btnRed_Click);
             // 
-            // groupBox4
+            // btnBlue
             // 
-            this.groupBox4.Controls.Add(this.button5);
-            this.groupBox4.Location = new System.Drawing.Point(12, 70);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox4.Size = new System.Drawing.Size(200, 70);
-            this.groupBox4.TabIndex = 3;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "ویرایش مشخصات";
+            this.btnBlue.Location = new System.Drawing.Point(18, 29);
+            this.btnBlue.Name = "btnBlue";
+            this.btnBlue.Size = new System.Drawing.Size(176, 23);
+            this.btnBlue.TabIndex = 0;
+            this.btnBlue.Text = "ابی";
+            this.btnBlue.UseVisualStyleBackColor = true;
+            this.btnBlue.Click += new System.EventHandler(this.btnBlue_Click);
             // 
-            // button5
+            // gbxEdit
             // 
-            this.button5.Location = new System.Drawing.Point(6, 24);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(188, 23);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "بارای ویرایش کلیک کنید";
-            this.button5.UseVisualStyleBackColor = true;
+            this.gbxEdit.Controls.Add(this.btnEdit);
+            this.gbxEdit.Location = new System.Drawing.Point(12, 70);
+            this.gbxEdit.Name = "gbxEdit";
+            this.gbxEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.gbxEdit.Size = new System.Drawing.Size(200, 70);
+            this.gbxEdit.TabIndex = 3;
+            this.gbxEdit.TabStop = false;
+            this.gbxEdit.Text = "ویرایش مشخصات";
             // 
-            // groupBox5
+            // btnEdit
             // 
-            this.groupBox5.Controls.Add(this.textBox3);
-            this.groupBox5.Controls.Add(this.label4);
-            this.groupBox5.Controls.Add(this.button9);
-            this.groupBox5.Controls.Add(this.button8);
-            this.groupBox5.Controls.Add(this.button7);
-            this.groupBox5.Controls.Add(this.button6);
-            this.groupBox5.Controls.Add(this.textBox2);
-            this.groupBox5.Controls.Add(this.textBox1);
-            this.groupBox5.Controls.Add(this.label3);
-            this.groupBox5.Controls.Add(this.label2);
-            this.groupBox5.Location = new System.Drawing.Point(12, 146);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox5.Size = new System.Drawing.Size(200, 180);
-            this.groupBox5.TabIndex = 1;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "مجاسبات عددی";
+            this.btnEdit.Location = new System.Drawing.Point(6, 24);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(188, 23);
+            this.btnEdit.TabIndex = 0;
+            this.btnEdit.Text = "بارای ویرایش کلیک کنید";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // textBox3
+            // gbxCalculation
             // 
-            this.textBox3.Location = new System.Drawing.Point(6, 144);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(136, 20);
-            this.textBox3.TabIndex = 9;
+            this.gbxCalculation.Controls.Add(this.txtResult);
+            this.gbxCalculation.Controls.Add(this.label4);
+            this.gbxCalculation.Controls.Add(this.btnJam);
+            this.gbxCalculation.Controls.Add(this.btnTafrigh);
+            this.gbxCalculation.Controls.Add(this.btnZarb);
+            this.gbxCalculation.Controls.Add(this.btnTaghsim);
+            this.gbxCalculation.Controls.Add(this.txtNumberTwo);
+            this.gbxCalculation.Controls.Add(this.txtNumberOne);
+            this.gbxCalculation.Controls.Add(this.label3);
+            this.gbxCalculation.Controls.Add(this.label2);
+            this.gbxCalculation.Location = new System.Drawing.Point(12, 146);
+            this.gbxCalculation.Name = "gbxCalculation";
+            this.gbxCalculation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.gbxCalculation.Size = new System.Drawing.Size(200, 180);
+            this.gbxCalculation.TabIndex = 1;
+            this.gbxCalculation.TabStop = false;
+            this.gbxCalculation.Text = "مجاسبات عددی";
+            // 
+            // txtResult
+            // 
+            this.txtResult.Location = new System.Drawing.Point(6, 144);
+            this.txtResult.Name = "txtResult";
+            this.txtResult.Size = new System.Drawing.Size(136, 20);
+            this.txtResult.TabIndex = 9;
             // 
             // label4
             // 
@@ -190,55 +207,59 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "نتیجه :";
             // 
-            // button9
+            // btnJam
             // 
-            this.button9.Location = new System.Drawing.Point(6, 115);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 7;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btnJam.Location = new System.Drawing.Point(6, 115);
+            this.btnJam.Name = "btnJam";
+            this.btnJam.Size = new System.Drawing.Size(75, 23);
+            this.btnJam.TabIndex = 7;
+            this.btnJam.Text = "جمع";
+            this.btnJam.UseVisualStyleBackColor = true;
+            this.btnJam.Click += new System.EventHandler(this.btnJam_Click);
             // 
-            // button8
+            // btnTafrigh
             // 
-            this.button8.Location = new System.Drawing.Point(6, 86);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 6;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnTafrigh.Location = new System.Drawing.Point(6, 86);
+            this.btnTafrigh.Name = "btnTafrigh";
+            this.btnTafrigh.Size = new System.Drawing.Size(75, 23);
+            this.btnTafrigh.TabIndex = 6;
+            this.btnTafrigh.Text = "تفریق";
+            this.btnTafrigh.UseVisualStyleBackColor = true;
+            this.btnTafrigh.Click += new System.EventHandler(this.btnTafrigh_Click);
             // 
-            // button7
+            // btnZarb
             // 
-            this.button7.Location = new System.Drawing.Point(87, 86);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnZarb.Location = new System.Drawing.Point(87, 86);
+            this.btnZarb.Name = "btnZarb";
+            this.btnZarb.Size = new System.Drawing.Size(75, 23);
+            this.btnZarb.TabIndex = 5;
+            this.btnZarb.Text = "ضرب";
+            this.btnZarb.UseVisualStyleBackColor = true;
+            this.btnZarb.Click += new System.EventHandler(this.btnZarb_Click);
             // 
-            // button6
+            // btnTaghsim
             // 
-            this.button6.Location = new System.Drawing.Point(87, 115);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnTaghsim.Location = new System.Drawing.Point(87, 115);
+            this.btnTaghsim.Name = "btnTaghsim";
+            this.btnTaghsim.Size = new System.Drawing.Size(75, 23);
+            this.btnTaghsim.TabIndex = 4;
+            this.btnTaghsim.Text = "تقسیم";
+            this.btnTaghsim.UseVisualStyleBackColor = true;
+            this.btnTaghsim.Click += new System.EventHandler(this.btnTaghsim_Click);
             // 
-            // textBox2
+            // txtNumberTwo
             // 
-            this.textBox2.Location = new System.Drawing.Point(6, 60);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(136, 20);
-            this.textBox2.TabIndex = 3;
+            this.txtNumberTwo.Location = new System.Drawing.Point(6, 60);
+            this.txtNumberTwo.Name = "txtNumberTwo";
+            this.txtNumberTwo.Size = new System.Drawing.Size(136, 20);
+            this.txtNumberTwo.TabIndex = 3;
             // 
-            // textBox1
+            // txtNumberOne
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(136, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtNumberOne.Location = new System.Drawing.Point(6, 25);
+            this.txtNumberOne.Name = "txtNumberOne";
+            this.txtNumberOne.Size = new System.Drawing.Size(136, 20);
+            this.txtNumberOne.TabIndex = 2;
             // 
             // label3
             // 
@@ -264,10 +285,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(555, 333);
-            this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.gbxCalculation);
+            this.Controls.Add(this.gbxEdit);
+            this.Controls.Add(this.gbxChangeBackColor);
+            this.Controls.Add(this.gbxAddUser);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmMain";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -275,11 +296,11 @@
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
+            this.gbxAddUser.ResumeLayout(false);
+            this.gbxChangeBackColor.ResumeLayout(false);
+            this.gbxEdit.ResumeLayout(false);
+            this.gbxCalculation.ResumeLayout(false);
+            this.gbxCalculation.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -287,26 +308,27 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblUserName;
+        private System.Windows.Forms.GroupBox gbxAddUser;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.GroupBox gbxChangeBackColor;
+        private System.Windows.Forms.Button btnGreen;
+        private System.Windows.Forms.Button btnRed;
+        private System.Windows.Forms.Button btnBlue;
+        private System.Windows.Forms.GroupBox gbxEdit;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.GroupBox gbxCalculation;
+        private System.Windows.Forms.TextBox txtNumberTwo;
+        private System.Windows.Forms.TextBox txtNumberOne;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtResult;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnJam;
+        private System.Windows.Forms.Button btnTafrigh;
+        private System.Windows.Forms.Button btnZarb;
+        private System.Windows.Forms.Button btnTaghsim;
+        private System.Windows.Forms.Button btnDefultColor;
 
     }
 }

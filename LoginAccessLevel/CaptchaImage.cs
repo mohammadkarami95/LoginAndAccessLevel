@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.Drawing.Text;
+using System.Windows.Forms;
 namespace Login
 {
     class CaptchaImage
@@ -60,6 +61,11 @@ namespace Login
             this.SetDimensions(width, height);
             this.SetFamilyName(familyName);
             this.GenerateImage();
+        }
+
+        public CaptchaImage()
+        {
+            // TODO: Complete member initialization
         }
 
         // ====================================================================
@@ -194,5 +200,37 @@ namespace Login
             // Set the image.
             this.image = bitmap;
         }
+
+        //-----------------------------
+        //CAPTCHA CODE
+        private static string _captcha;
+
+        public static string Captcha
+        {
+            get { return _captcha; }
+            set { _captcha = value; }
+        }
+        System.Speech.Synthesis.SpeechSynthesizer speech = new System.Speech.Synthesis.SpeechSynthesizer();
+        public void SpeechCaptcha()
+        {
+            speech.Volume = 100;
+            foreach (char objChar in Captcha.ToCharArray())
+            {
+                speech.Speak(objChar.ToString());
+            }
+        }
+
+        private string RandomNumber()
+        {
+            Random rnd = new Random();
+            return rnd.Next(10000, 99999).ToString();
+        }
+        public void RefreshCaptcha(PictureBox pbxCaptcha)
+        {
+            Login.CaptchaImage captchaImage = new Login.CaptchaImage(RandomNumber(), 140, 60);
+            pbxCaptcha.Image = captchaImage.Image;
+            Captcha = captchaImage.Text;
+        }
+        //CAPTCHA CODE ADDED
     }
 }
