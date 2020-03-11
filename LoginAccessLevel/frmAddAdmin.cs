@@ -57,6 +57,7 @@ namespace LoginAccessLevel
         private void button3_Click(object sender, EventArgs e)
         {
             //Login.CaptchaImage captcha = new Login.CaptchaImage();
+            
             errorProvider1.Clear();
             if (string.IsNullOrWhiteSpace(txtNameFamily.Text))
                 errorProvider1.SetError(txtNameFamily, "لطفا نام و نام خانوادگی را وارد کنید");

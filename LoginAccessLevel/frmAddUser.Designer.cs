@@ -31,71 +31,71 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddUser));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.txtCaptchaCode = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.btnAddAdd = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnSpeech = new System.Windows.Forms.Button();
+            this.pbxCaptcha = new System.Windows.Forms.PictureBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.ckbCalculationAdd = new System.Windows.Forms.CheckBox();
+            this.ckbChangeColorAdd = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.txtConfimationAdd = new System.Windows.Forms.TextBox();
+            this.txtPasswordAdd = new System.Windows.Forms.TextBox();
+            this.txtUserNameAdd = new System.Windows.Forms.TextBox();
+            this.txtNameFamilyAdd = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.cmbSecurityQuestionEdit = new System.Windows.Forms.ComboBox();
+            this.btEdit = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.ckbChangeColorEdit = new System.Windows.Forms.CheckBox();
+            this.ckbCalculationEdit = new System.Windows.Forms.CheckBox();
+            this.ckbAddUserEdit = new System.Windows.Forms.CheckBox();
+            this.txtConfirmationEdit = new System.Windows.Forms.TextBox();
+            this.txtPasswordEdit = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtAnswerQuestionEdit = new System.Windows.Forms.TextBox();
+            this.txtEmailEdit = new System.Windows.Forms.TextBox();
+            this.txtNameFamilyEdit = new System.Windows.Forms.TextBox();
+            this.txtMobileNumberEdit = new System.Windows.Forms.TextBox();
+            this.txtUserNameEdit = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCaptcha)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.txtCaptchaCode);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.btnAddAdd);
+            this.groupBox1.Controls.Add(this.btnRefresh);
+            this.groupBox1.Controls.Add(this.btnSpeech);
+            this.groupBox1.Controls.Add(this.pbxCaptcha);
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtConfimationAdd);
+            this.groupBox1.Controls.Add(this.txtPasswordAdd);
+            this.groupBox1.Controls.Add(this.txtUserNameAdd);
+            this.groupBox1.Controls.Add(this.txtNameFamilyAdd);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -107,147 +107,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "اضافه کردن کاربر جدید";
             // 
-            // label1
+            // txtCaptchaCode
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(565, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "نام و نام خانوادگی:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(296, 22);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "نام کاربری :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(607, 50);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "کلمه عبور:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(279, 50);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "تغییر کلمه عبور:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(401, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 20);
-            this.textBox1.TabIndex = 4;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(117, 19);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(156, 20);
-            this.textBox2.TabIndex = 5;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(401, 47);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(158, 20);
-            this.textBox3.TabIndex = 6;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(117, 47);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(156, 20);
-            this.textBox4.TabIndex = 7;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.checkBox3);
-            this.groupBox2.Controls.Add(this.checkBox2);
-            this.groupBox2.Controls.Add(this.checkBox1);
-            this.groupBox2.Location = new System.Drawing.Point(117, 73);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(545, 52);
-            this.groupBox2.TabIndex = 8;
-            this.groupBox2.TabStop = false;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(419, 19);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(108, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "اضافه کردن کاربر";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(204, 19);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(110, 17);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "تغییر رنگ نرم افزار";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(6, 19);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(93, 17);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "انجام محاسبات";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(6, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 48);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(6, 73);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 23);
-            this.button1.TabIndex = 9;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Location = new System.Drawing.Point(6, 102);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 22);
-            this.button2.TabIndex = 10;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(170, 148);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(492, 23);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "اضافه کردن";
-            this.button3.UseVisualStyleBackColor = true;
+            this.txtCaptchaCode.Location = new System.Drawing.Point(6, 130);
+            this.txtCaptchaCode.Name = "txtCaptchaCode";
+            this.txtCaptchaCode.Size = new System.Drawing.Size(100, 20);
+            this.txtCaptchaCode.TabIndex = 13;
             // 
             // label5
             // 
@@ -258,30 +123,172 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "کدامنیتی:";
             // 
-            // textBox5
+            // btnAddAdd
             // 
-            this.textBox5.Location = new System.Drawing.Point(6, 130);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 13;
+            this.btnAddAdd.Location = new System.Drawing.Point(170, 133);
+            this.btnAddAdd.Name = "btnAddAdd";
+            this.btnAddAdd.Size = new System.Drawing.Size(492, 38);
+            this.btnAddAdd.TabIndex = 11;
+            this.btnAddAdd.Text = "اضافه کردن";
+            this.btnAddAdd.UseVisualStyleBackColor = true;
+            this.btnAddAdd.Click += new System.EventHandler(this.btnAddAdd_Click);
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.BackgroundImage")));
+            this.btnRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnRefresh.Location = new System.Drawing.Point(6, 102);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(121, 22);
+            this.btnRefresh.TabIndex = 10;
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // btnSpeech
+            // 
+            this.btnSpeech.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSpeech.BackgroundImage")));
+            this.btnSpeech.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSpeech.Location = new System.Drawing.Point(6, 73);
+            this.btnSpeech.Name = "btnSpeech";
+            this.btnSpeech.Size = new System.Drawing.Size(121, 23);
+            this.btnSpeech.TabIndex = 9;
+            this.btnSpeech.UseVisualStyleBackColor = true;
+            this.btnSpeech.Click += new System.EventHandler(this.btnSpeech_Click);
+            // 
+            // pbxCaptcha
+            // 
+            this.pbxCaptcha.Location = new System.Drawing.Point(6, 19);
+            this.pbxCaptcha.Name = "pbxCaptcha";
+            this.pbxCaptcha.Size = new System.Drawing.Size(121, 48);
+            this.pbxCaptcha.TabIndex = 1;
+            this.pbxCaptcha.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.ckbCalculationAdd);
+            this.groupBox2.Controls.Add(this.ckbChangeColorAdd);
+            this.groupBox2.Controls.Add(this.checkBox1);
+            this.groupBox2.Location = new System.Drawing.Point(133, 73);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(529, 52);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            // 
+            // ckbCalculationAdd
+            // 
+            this.ckbCalculationAdd.AutoSize = true;
+            this.ckbCalculationAdd.Location = new System.Drawing.Point(6, 19);
+            this.ckbCalculationAdd.Name = "ckbCalculationAdd";
+            this.ckbCalculationAdd.Size = new System.Drawing.Size(93, 17);
+            this.ckbCalculationAdd.TabIndex = 2;
+            this.ckbCalculationAdd.Text = "انجام محاسبات";
+            this.ckbCalculationAdd.UseVisualStyleBackColor = true;
+            // 
+            // ckbChangeColorAdd
+            // 
+            this.ckbChangeColorAdd.AutoSize = true;
+            this.ckbChangeColorAdd.Location = new System.Drawing.Point(204, 19);
+            this.ckbChangeColorAdd.Name = "ckbChangeColorAdd";
+            this.ckbChangeColorAdd.Size = new System.Drawing.Size(110, 17);
+            this.ckbChangeColorAdd.TabIndex = 1;
+            this.ckbChangeColorAdd.Text = "تغییر رنگ نرم افزار";
+            this.ckbChangeColorAdd.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Enabled = false;
+            this.checkBox1.Location = new System.Drawing.Point(419, 19);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(108, 17);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "اضافه کردن کاربر";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // txtConfimationAdd
+            // 
+            this.txtConfimationAdd.Location = new System.Drawing.Point(133, 47);
+            this.txtConfimationAdd.Name = "txtConfimationAdd";
+            this.txtConfimationAdd.Size = new System.Drawing.Size(156, 20);
+            this.txtConfimationAdd.TabIndex = 7;
+            // 
+            // txtPasswordAdd
+            // 
+            this.txtPasswordAdd.Location = new System.Drawing.Point(401, 47);
+            this.txtPasswordAdd.Name = "txtPasswordAdd";
+            this.txtPasswordAdd.Size = new System.Drawing.Size(158, 20);
+            this.txtPasswordAdd.TabIndex = 6;
+            // 
+            // txtUserNameAdd
+            // 
+            this.txtUserNameAdd.Location = new System.Drawing.Point(133, 19);
+            this.txtUserNameAdd.Name = "txtUserNameAdd";
+            this.txtUserNameAdd.Size = new System.Drawing.Size(156, 20);
+            this.txtUserNameAdd.TabIndex = 5;
+            // 
+            // txtNameFamilyAdd
+            // 
+            this.txtNameFamilyAdd.Location = new System.Drawing.Point(401, 19);
+            this.txtNameFamilyAdd.Name = "txtNameFamilyAdd";
+            this.txtNameFamilyAdd.Size = new System.Drawing.Size(158, 20);
+            this.txtNameFamilyAdd.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(295, 50);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(79, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "تایید کلمه عبور:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(607, 50);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "کلمه عبور:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(310, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "نام کاربری :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(565, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "نام و نام خانوادگی:";
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button5);
-            this.groupBox3.Controls.Add(this.button4);
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.Controls.Add(this.cmbSecurityQuestionEdit);
+            this.groupBox3.Controls.Add(this.btEdit);
+            this.groupBox3.Controls.Add(this.btnDelete);
             this.groupBox3.Controls.Add(this.groupBox4);
-            this.groupBox3.Controls.Add(this.textBox13);
-            this.groupBox3.Controls.Add(this.textBox12);
+            this.groupBox3.Controls.Add(this.txtConfirmationEdit);
+            this.groupBox3.Controls.Add(this.txtPasswordEdit);
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.textBox10);
-            this.groupBox3.Controls.Add(this.textBox9);
-            this.groupBox3.Controls.Add(this.textBox11);
-            this.groupBox3.Controls.Add(this.textBox8);
-            this.groupBox3.Controls.Add(this.textBox7);
-            this.groupBox3.Controls.Add(this.textBox6);
+            this.groupBox3.Controls.Add(this.txtAnswerQuestionEdit);
+            this.groupBox3.Controls.Add(this.txtEmailEdit);
+            this.groupBox3.Controls.Add(this.txtNameFamilyEdit);
+            this.groupBox3.Controls.Add(this.txtMobileNumberEdit);
+            this.groupBox3.Controls.Add(this.txtUserNameEdit);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.label7);
@@ -294,118 +301,95 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "ویرایش مشخصات کلیه کاربران";
             // 
-            // dataGridView1
+            // cmbSecurityQuestionEdit
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(653, 161);
-            this.dataGridView1.TabIndex = 0;
+            this.cmbSecurityQuestionEdit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSecurityQuestionEdit.FormattingEnabled = true;
+            this.cmbSecurityQuestionEdit.Items.AddRange(new object[] {
+            "نام غذای مورد علاقه شما چیست؟",
+            "نام مکان مورد علاقه شما چیست ؟",
+            "اسم مورد علاقه شما چیست؟",
+            "کشور مورد علاقه شما چیست ؟",
+            "نام معلم اول دبیرستان شما چیست؟",
+            "زمینه ورزشی مورد علاقه شما چیست؟"});
+            this.cmbSecurityQuestionEdit.Location = new System.Drawing.Point(339, 238);
+            this.cmbSecurityQuestionEdit.Name = "cmbSecurityQuestionEdit";
+            this.cmbSecurityQuestionEdit.Size = new System.Drawing.Size(217, 21);
+            this.cmbSecurityQuestionEdit.TabIndex = 16;
             // 
-            // label6
+            // btEdit
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(601, 189);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 13);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "نام کاربری:";
+            this.btEdit.Location = new System.Drawing.Point(188, 335);
+            this.btEdit.Name = "btEdit";
+            this.btEdit.Size = new System.Drawing.Size(116, 42);
+            this.btEdit.TabIndex = 3;
+            this.btEdit.Text = "ویرایش";
+            this.btEdit.UseVisualStyleBackColor = true;
             // 
-            // label7
+            // btnDelete
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(235, 189);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 13);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "شماره موبایل:";
+            this.btnDelete.Location = new System.Drawing.Point(12, 335);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(116, 42);
+            this.btnDelete.TabIndex = 3;
+            this.btnDelete.Text = "حذف";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // label8
+            // groupBox4
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(562, 215);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(100, 13);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "نام و نام خانوادگی :";
+            this.groupBox4.Controls.Add(this.ckbChangeColorEdit);
+            this.groupBox4.Controls.Add(this.ckbCalculationEdit);
+            this.groupBox4.Controls.Add(this.ckbAddUserEdit);
+            this.groupBox4.Location = new System.Drawing.Point(6, 264);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(298, 65);
+            this.groupBox4.TabIndex = 15;
+            this.groupBox4.TabStop = false;
             // 
-            // label9
+            // ckbChangeColorEdit
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(249, 215);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(58, 13);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "ادرس ایمیل:";
+            this.ckbChangeColorEdit.AutoSize = true;
+            this.ckbChangeColorEdit.Location = new System.Drawing.Point(182, 42);
+            this.ckbChangeColorEdit.Name = "ckbChangeColorEdit";
+            this.ckbChangeColorEdit.Size = new System.Drawing.Size(110, 17);
+            this.ckbChangeColorEdit.TabIndex = 2;
+            this.ckbChangeColorEdit.Text = "تغییر رنگ نرم افزار";
+            this.ckbChangeColorEdit.UseVisualStyleBackColor = true;
             // 
-            // textBox6
+            // ckbCalculationEdit
             // 
-            this.textBox6.Location = new System.Drawing.Point(339, 186);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(217, 20);
-            this.textBox6.TabIndex = 5;
+            this.ckbCalculationEdit.AutoSize = true;
+            this.ckbCalculationEdit.Location = new System.Drawing.Point(75, 19);
+            this.ckbCalculationEdit.Name = "ckbCalculationEdit";
+            this.ckbCalculationEdit.Size = new System.Drawing.Size(93, 17);
+            this.ckbCalculationEdit.TabIndex = 1;
+            this.ckbCalculationEdit.Text = "انجام محاسبات";
+            this.ckbCalculationEdit.UseVisualStyleBackColor = true;
             // 
-            // textBox7
+            // ckbAddUserEdit
             // 
-            this.textBox7.Location = new System.Drawing.Point(6, 186);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(199, 20);
-            this.textBox7.TabIndex = 6;
+            this.ckbAddUserEdit.AutoSize = true;
+            this.ckbAddUserEdit.Enabled = false;
+            this.ckbAddUserEdit.Location = new System.Drawing.Point(184, 19);
+            this.ckbAddUserEdit.Name = "ckbAddUserEdit";
+            this.ckbAddUserEdit.Size = new System.Drawing.Size(108, 17);
+            this.ckbAddUserEdit.TabIndex = 0;
+            this.ckbAddUserEdit.Text = "اضافه کردن کاربر";
+            this.ckbAddUserEdit.UseVisualStyleBackColor = true;
             // 
-            // textBox8
+            // txtConfirmationEdit
             // 
-            this.textBox8.Location = new System.Drawing.Point(339, 238);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(217, 20);
-            this.textBox8.TabIndex = 7;
+            this.txtConfirmationEdit.Location = new System.Drawing.Point(339, 290);
+            this.txtConfirmationEdit.Name = "txtConfirmationEdit";
+            this.txtConfirmationEdit.Size = new System.Drawing.Size(217, 20);
+            this.txtConfirmationEdit.TabIndex = 14;
             // 
-            // textBox9
+            // txtPasswordEdit
             // 
-            this.textBox9.Location = new System.Drawing.Point(6, 212);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(199, 20);
-            this.textBox9.TabIndex = 8;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(6, 238);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(199, 20);
-            this.textBox10.TabIndex = 9;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(211, 241);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(96, 13);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "پاسخ سوال امنیتی:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(597, 241);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 13);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "سوال امنیتی";
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(339, 212);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(217, 20);
-            this.textBox11.TabIndex = 7;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(607, 267);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(55, 13);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "کلمه عبور:";
+            this.txtPasswordEdit.Location = new System.Drawing.Point(339, 264);
+            this.txtPasswordEdit.Name = "txtPasswordEdit";
+            this.txtPasswordEdit.Size = new System.Drawing.Size(217, 20);
+            this.txtPasswordEdit.TabIndex = 13;
             // 
             // label13
             // 
@@ -416,78 +400,114 @@
             this.label13.TabIndex = 12;
             this.label13.Text = "تایید کلمه عبور:";
             // 
-            // textBox12
+            // label12
             // 
-            this.textBox12.Location = new System.Drawing.Point(339, 264);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(217, 20);
-            this.textBox12.TabIndex = 13;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(607, 267);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(55, 13);
+            this.label12.TabIndex = 11;
+            this.label12.Text = "کلمه عبور:";
             // 
-            // textBox13
+            // label11
             // 
-            this.textBox13.Location = new System.Drawing.Point(339, 290);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(217, 20);
-            this.textBox13.TabIndex = 14;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(597, 241);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(65, 13);
+            this.label11.TabIndex = 10;
+            this.label11.Text = "سوال امنیتی";
             // 
-            // groupBox4
+            // label10
             // 
-            this.groupBox4.Controls.Add(this.checkBox6);
-            this.groupBox4.Controls.Add(this.checkBox5);
-            this.groupBox4.Controls.Add(this.checkBox4);
-            this.groupBox4.Location = new System.Drawing.Point(6, 264);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(298, 65);
-            this.groupBox4.TabIndex = 15;
-            this.groupBox4.TabStop = false;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(211, 241);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(96, 13);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "پاسخ سوال امنیتی:";
             // 
-            // checkBox4
+            // txtAnswerQuestionEdit
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(184, 19);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(108, 17);
-            this.checkBox4.TabIndex = 0;
-            this.checkBox4.Text = "اضافه کردن کاربر";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.txtAnswerQuestionEdit.Location = new System.Drawing.Point(6, 238);
+            this.txtAnswerQuestionEdit.Name = "txtAnswerQuestionEdit";
+            this.txtAnswerQuestionEdit.Size = new System.Drawing.Size(199, 20);
+            this.txtAnswerQuestionEdit.TabIndex = 9;
             // 
-            // checkBox5
+            // txtEmailEdit
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(75, 19);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(93, 17);
-            this.checkBox5.TabIndex = 1;
-            this.checkBox5.Text = "انجام محاسبات";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.txtEmailEdit.Location = new System.Drawing.Point(6, 212);
+            this.txtEmailEdit.Name = "txtEmailEdit";
+            this.txtEmailEdit.Size = new System.Drawing.Size(199, 20);
+            this.txtEmailEdit.TabIndex = 8;
             // 
-            // checkBox6
+            // txtNameFamilyEdit
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(182, 42);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(110, 17);
-            this.checkBox6.TabIndex = 2;
-            this.checkBox6.Text = "تغییر رنگ نرم افزار";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.txtNameFamilyEdit.Location = new System.Drawing.Point(339, 212);
+            this.txtNameFamilyEdit.Name = "txtNameFamilyEdit";
+            this.txtNameFamilyEdit.Size = new System.Drawing.Size(217, 20);
+            this.txtNameFamilyEdit.TabIndex = 7;
             // 
-            // button4
+            // txtMobileNumberEdit
             // 
-            this.button4.Location = new System.Drawing.Point(12, 335);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(116, 42);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "حذف";
-            this.button4.UseVisualStyleBackColor = true;
+            this.txtMobileNumberEdit.Location = new System.Drawing.Point(6, 186);
+            this.txtMobileNumberEdit.Name = "txtMobileNumberEdit";
+            this.txtMobileNumberEdit.Size = new System.Drawing.Size(199, 20);
+            this.txtMobileNumberEdit.TabIndex = 6;
             // 
-            // button5
+            // txtUserNameEdit
             // 
-            this.button5.Location = new System.Drawing.Point(188, 335);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(116, 42);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "ویرایش";
-            this.button5.UseVisualStyleBackColor = true;
+            this.txtUserNameEdit.Enabled = false;
+            this.txtUserNameEdit.Location = new System.Drawing.Point(339, 186);
+            this.txtUserNameEdit.Name = "txtUserNameEdit";
+            this.txtUserNameEdit.Size = new System.Drawing.Size(217, 20);
+            this.txtUserNameEdit.TabIndex = 5;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(249, 215);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(58, 13);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "ادرس ایمیل:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(562, 215);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(100, 13);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "نام و نام خانوادگی :";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(235, 189);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(72, 13);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "شماره موبایل:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(601, 189);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 13);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "نام کاربری:";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(653, 161);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             // 
             // errorProvider1
             // 
@@ -495,6 +515,7 @@
             // 
             // frmAddUser
             // 
+            this.AcceptButton = this.btnAddAdd;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(692, 598);
@@ -503,16 +524,17 @@
             this.Name = "frmAddUser";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "اضافه کردن کاربر جدید و ویرایش";
+            this.Load += new System.EventHandler(this.frmAddUser_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCaptcha)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
@@ -521,48 +543,48 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtCaptchaCode;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnAddAdd;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnSpeech;
+        private System.Windows.Forms.PictureBox pbxCaptcha;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox ckbCalculationAdd;
+        private System.Windows.Forms.CheckBox ckbChangeColorAdd;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtConfimationAdd;
+        private System.Windows.Forms.TextBox txtPasswordAdd;
+        private System.Windows.Forms.TextBox txtUserNameAdd;
+        private System.Windows.Forms.TextBox txtNameFamilyAdd;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btEdit;
+        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.CheckBox ckbChangeColorEdit;
+        private System.Windows.Forms.CheckBox ckbCalculationEdit;
+        private System.Windows.Forms.CheckBox ckbAddUserEdit;
+        private System.Windows.Forms.TextBox txtConfirmationEdit;
+        private System.Windows.Forms.TextBox txtPasswordEdit;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtAnswerQuestionEdit;
+        private System.Windows.Forms.TextBox txtEmailEdit;
+        private System.Windows.Forms.TextBox txtNameFamilyEdit;
+        private System.Windows.Forms.TextBox txtMobileNumberEdit;
+        private System.Windows.Forms.TextBox txtUserNameEdit;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ComboBox cmbSecurityQuestionEdit;
     }
 }
