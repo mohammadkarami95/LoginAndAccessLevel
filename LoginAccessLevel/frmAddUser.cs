@@ -49,7 +49,7 @@ namespace LoginAccessLevel
             sqlCmd_UpdateAccess.CommandText = "update tblAccessLevel set Can_Add_User=@Can_Add_User, Can_Change_BackColor=@Can_Change_BackColor, Can_Calculation=@Can_Calculation where User_Name=@User_Name";
             sqlCmd_UpdateAccess.Connection = con;
             sqlCmd_UpdateAccess.Parameters.Add("@User_Name", SqlDbType.NVarChar).Value = userName;
-            sqlCmd_UpdateAccess.Parameters.Add("@Can_Add_User", SqlDbType.NVarChar).Value = false;
+            sqlCmd_UpdateAccess.Parameters.Add("@Can_Add_User", SqlDbType.NVarChar).Value = ckbAddUserEdit.Checked;
             sqlCmd_UpdateAccess.Parameters.Add("@Can_Change_BackColor", SqlDbType.NVarChar).Value = ckbChangeColorEdit.Checked;
             sqlCmd_UpdateAccess.Parameters.Add("@Can_Calculation", SqlDbType.NVarChar).Value = ckbCalculationEdit.Checked;
             sqlCmd_UpdateAccess.ExecuteNonQuery();
@@ -65,7 +65,8 @@ namespace LoginAccessLevel
             txtPasswordEdit.ResetText();
             txtConfirmationEdit.ResetText();
             txtMobileNumberEdit.ResetText();
-            cmbSecurityQuestionEdit.ResetText();
+            txtEmailEdit.ResetText();
+            cmbSecurityQuestionEdit.SelectedIndex = -1;
             txtAnswerQuestionEdit.ResetText();
             txtNameFamilyEdit.ResetText();
             ckbCalculationEdit.Checked = false;
@@ -146,13 +147,106 @@ namespace LoginAccessLevel
             sqlCmdAccess.CommandText = "select * from tblAccessLevel where User_Name=@User_Name";
             sqlCmdAccess.Parameters.Add("@User_Name", SqlDbType.NVarChar).Value = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
             sqlCmdAccess.Connection = con;
-            SqlDataAdapter data = new SqlDataAdapter(sqlCmdAccess);
-            DataTable dt = new DataTable();
-            data.Fill(dt);
-            ckbCalculationEdit.Checked = (bool) dt.Rows[0][3];
-            ckbChangeColorEdit.Checked = (bool)dt.Rows[0][2];
-            ckbAddUserEdit.Checked = (bool)dt.Rows[0][1];
 
+            try
+            {
+                SqlDataAdapter data = new SqlDataAdapter(sqlCmdAccess);
+                DataTable dt = new DataTable();
+                data.Fill(dt);
+                if ((bool)dt.Rows[0][1]) // If the user was an administrator, it would be impossible to edit the checkboxes.
+                {
+                    gbxAccessLevel.Enabled = false;
+                }
+                else
+                {
+                    gbxAccessLevel.Enabled = true;
+                }
+
+                ckbCalculationEdit.Checked = (bool)dt.Rows[0][3];
+                ckbChangeColorEdit.Checked = (bool)dt.Rows[0][2];
+                ckbAddUserEdit.Checked = (bool)dt.Rows[0][1];
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+        }
+
+        private bool IsControlsEmpty()
+        {
+            errorProvider1.Clear();
+            if (string.IsNullOrWhiteSpace(txtNameFamilyEdit.Text))
+                errorProvider1.SetError(txtNameFamilyEdit, "لطفا نام و نام خانوادگی را وارد کنید");
+            //else if (string.IsNullOrWhiteSpace(txtUserNameEdit.Text))
+            //    errorProvider1.SetError(txtUserNameEdit, "لطفا یوزر نیم را وارد کنید");
+            else if (string.IsNullOrWhiteSpace(txtPasswordEdit.Text) || txtPasswordEdit.Text != txtConfirmationEdit.Text)
+            {
+                errorProvider1.SetError(txtPasswordEdit, "لطفا پسورد را وارد کنید");
+                errorProvider1.SetError(txtConfirmationEdit, "لطفا پسورد را تایید کنید");
+            }
+            else if (string.IsNullOrWhiteSpace(txtMobileNumberEdit.Text))
+                errorProvider1.SetError(txtMobileNumberEdit, "لطفا شماره موبایل را وارد کنید");
+            //else if (string.IsNullOrWhiteSpace(txtAnswerQuestionEdit.Text))
+            //    errorProvider1.SetError(txtAnswerQuestionEdit, "لطفا به سوال امنیتی پاسخ دهید");
+            else
+                return true;
+            return false;
+        }
+        private void btEdit_Click(object sender, EventArgs e)
+        {
+            if (IsControlsEmpty())
+            {
+
+                SqlCommand sqlCmd_Edit = new SqlCommand();
+                sqlCmd_Edit.CommandText = "update tblUsers set User_Pass=@User_Pass, First_Name=@First_Name, Mobile_Number=@Mobile_Number, Email_Address=@Email_Address, Security_Question=@Security_Question, Answer_Question=@Answer_Question where User_Name=@User_Name";
+                sqlCmd_Edit.Connection = con;
+
+                sqlCmd_Edit.Parameters.Add("@User_Name", SqlDbType.NVarChar).Value = txtUserNameEdit.Text;
+                sqlCmd_Edit.Parameters.Add("@User_Pass", SqlDbType.NVarChar).Value = Security.CalculateMD5Hash(txtPasswordEdit.Text);
+                sqlCmd_Edit.Parameters.Add("@First_Name", SqlDbType.NVarChar).Value = txtNameFamilyEdit.Text;
+                sqlCmd_Edit.Parameters.Add("@Mobile_Number", SqlDbType.NVarChar).Value = txtMobileNumberEdit.Text;
+                sqlCmd_Edit.Parameters.Add("@Security_Question", SqlDbType.NVarChar).Value = cmbSecurityQuestionEdit.Text;
+                sqlCmd_Edit.Parameters.Add("@Answer_Question", SqlDbType.NVarChar).Value = Security.CalculateMD5Hash(txtAnswerQuestionEdit.Text);
+                sqlCmd_Edit.Parameters.Add("@Email_Address", SqlDbType.NVarChar).Value = txtEmailEdit.Text;
+
+                con.Open();
+                sqlCmd_Edit.ExecuteNonQuery();
+                UpdateAccessLevel(txtUserNameEdit.Text);
+                con.Close();
+                MessageBox.Show("اطلاعات با موفقیت ویرایش شد", "ثبت", MessageBoxButtons.OK, MessageBoxIcon.None);
+                LoadUsersInfo();
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (ckbAddUserEdit.Checked)
+            {
+                MessageBox.Show("مدیر سیستم قابل حذف شدن نمی باشد", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
+            else
+            {
+                SqlCommand sqlCmd_DeleteUser = new SqlCommand();
+                sqlCmd_DeleteUser.CommandText = "delete from tblUsers where User_Name=@User_Name";
+                sqlCmd_DeleteUser.Connection = con;
+                sqlCmd_DeleteUser.Parameters.Add("@User_Name", SqlDbType.NVarChar).Value = txtUserNameEdit.Text;
+
+
+                try
+                {
+                    con.Open();
+                    sqlCmd_DeleteUser.ExecuteNonQuery();
+                    LoadUsersInfo();
+                    con.Close();
+                    MessageBox.Show("کاربر مورد نظر با موفقیت حذف شد", "موفقیت", MessageBoxButtons.OK, MessageBoxIcon.None);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("در حذف از دیتابیس مشکلی رخ داد", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                }
+            }
         }
     }
 }

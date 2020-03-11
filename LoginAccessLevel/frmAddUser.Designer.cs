@@ -53,7 +53,7 @@
             this.cmbSecurityQuestionEdit = new System.Windows.Forms.ComboBox();
             this.btEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.gbxAccessLevel = new System.Windows.Forms.GroupBox();
             this.ckbChangeColorEdit = new System.Windows.Forms.CheckBox();
             this.ckbCalculationEdit = new System.Windows.Forms.CheckBox();
             this.ckbAddUserEdit = new System.Windows.Forms.CheckBox();
@@ -78,7 +78,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxCaptcha)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
+            this.gbxAccessLevel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -277,7 +277,7 @@
             this.groupBox3.Controls.Add(this.cmbSecurityQuestionEdit);
             this.groupBox3.Controls.Add(this.btEdit);
             this.groupBox3.Controls.Add(this.btnDelete);
-            this.groupBox3.Controls.Add(this.groupBox4);
+            this.groupBox3.Controls.Add(this.gbxAccessLevel);
             this.groupBox3.Controls.Add(this.txtConfirmationEdit);
             this.groupBox3.Controls.Add(this.txtPasswordEdit);
             this.groupBox3.Controls.Add(this.label13);
@@ -325,6 +325,7 @@
             this.btEdit.TabIndex = 3;
             this.btEdit.Text = "ویرایش";
             this.btEdit.UseVisualStyleBackColor = true;
+            this.btEdit.Click += new System.EventHandler(this.btEdit_Click);
             // 
             // btnDelete
             // 
@@ -334,17 +335,18 @@
             this.btnDelete.TabIndex = 3;
             this.btnDelete.Text = "حذف";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // groupBox4
+            // gbxAccessLevel
             // 
-            this.groupBox4.Controls.Add(this.ckbChangeColorEdit);
-            this.groupBox4.Controls.Add(this.ckbCalculationEdit);
-            this.groupBox4.Controls.Add(this.ckbAddUserEdit);
-            this.groupBox4.Location = new System.Drawing.Point(6, 264);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(298, 65);
-            this.groupBox4.TabIndex = 15;
-            this.groupBox4.TabStop = false;
+            this.gbxAccessLevel.Controls.Add(this.ckbChangeColorEdit);
+            this.gbxAccessLevel.Controls.Add(this.ckbCalculationEdit);
+            this.gbxAccessLevel.Controls.Add(this.ckbAddUserEdit);
+            this.gbxAccessLevel.Location = new System.Drawing.Point(6, 264);
+            this.gbxAccessLevel.Name = "gbxAccessLevel";
+            this.gbxAccessLevel.Size = new System.Drawing.Size(298, 65);
+            this.gbxAccessLevel.TabIndex = 15;
+            this.gbxAccessLevel.TabStop = false;
             // 
             // ckbChangeColorEdit
             // 
@@ -532,8 +534,8 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
+            this.gbxAccessLevel.ResumeLayout(false);
+            this.gbxAccessLevel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
@@ -564,7 +566,7 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btEdit;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox gbxAccessLevel;
         private System.Windows.Forms.CheckBox ckbChangeColorEdit;
         private System.Windows.Forms.CheckBox ckbCalculationEdit;
         private System.Windows.Forms.CheckBox ckbAddUserEdit;
