@@ -30,21 +30,21 @@
         {
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.rbtnSecurityQuestion = new System.Windows.Forms.RadioButton();
+            this.rbtnEmail = new System.Windows.Forms.RadioButton();
+            this.rbtnSMS = new System.Windows.Forms.RadioButton();
+            this.btnSend = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.txtAnswerQuestion = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.cmbSecurityQuestion = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -60,132 +60,93 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "نام کاربری شما :";
             // 
-            // textBox1
+            // txtUserName
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(257, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtUserName.Location = new System.Drawing.Point(12, 6);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(257, 20);
+            this.txtUserName.TabIndex = 1;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.rbtnSecurityQuestion);
+            this.groupBox1.Controls.Add(this.rbtnEmail);
+            this.groupBox1.Controls.Add(this.rbtnSMS);
             this.groupBox1.Location = new System.Drawing.Point(12, 32);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(348, 57);
+            this.groupBox1.Size = new System.Drawing.Size(348, 45);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "نحوه بازیابی";
             // 
-            // radioButton1
+            // rbtnSecurityQuestion
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(257, 19);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(72, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "پیام کوتاه";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbtnSecurityQuestion.AutoSize = true;
+            this.rbtnSecurityQuestion.Location = new System.Drawing.Point(6, 19);
+            this.rbtnSecurityQuestion.Name = "rbtnSecurityQuestion";
+            this.rbtnSecurityQuestion.Size = new System.Drawing.Size(83, 17);
+            this.rbtnSecurityQuestion.TabIndex = 2;
+            this.rbtnSecurityQuestion.Text = "سوال امنیتی";
+            this.rbtnSecurityQuestion.UseVisualStyleBackColor = true;
+            this.rbtnSecurityQuestion.CheckedChanged += new System.EventHandler(this.rbtnSecurityQuestion_CheckedChanged);
             // 
-            // radioButton2
+            // rbtnEmail
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(123, 19);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(102, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.Text = "پست الکترونیکی";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbtnEmail.AutoSize = true;
+            this.rbtnEmail.Location = new System.Drawing.Point(123, 19);
+            this.rbtnEmail.Name = "rbtnEmail";
+            this.rbtnEmail.Size = new System.Drawing.Size(102, 17);
+            this.rbtnEmail.TabIndex = 1;
+            this.rbtnEmail.Text = "پست الکترونیکی";
+            this.rbtnEmail.UseVisualStyleBackColor = true;
+            this.rbtnEmail.CheckedChanged += new System.EventHandler(this.rbtnEmail_CheckedChanged);
             // 
-            // radioButton3
+            // rbtnSMS
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(6, 19);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(83, 17);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.Text = "سوال امنیتی";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbtnSMS.AutoSize = true;
+            this.rbtnSMS.Checked = true;
+            this.rbtnSMS.Location = new System.Drawing.Point(257, 19);
+            this.rbtnSMS.Name = "rbtnSMS";
+            this.rbtnSMS.Size = new System.Drawing.Size(72, 17);
+            this.rbtnSMS.TabIndex = 0;
+            this.rbtnSMS.TabStop = true;
+            this.rbtnSMS.Text = "پیام کوتاه";
+            this.rbtnSMS.UseVisualStyleBackColor = true;
+            this.rbtnSMS.CheckedChanged += new System.EventHandler(this.rbtnSMS_CheckedChanged);
             // 
-            // button1
+            // btnSend
             // 
-            this.button1.Location = new System.Drawing.Point(12, 95);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(348, 33);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "ارسال";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSend.Location = new System.Drawing.Point(12, 83);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(348, 33);
+            this.btnSend.TabIndex = 3;
+            this.btnSend.Text = "ارسال";
+            this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.txtPassword);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.txtAnswerQuestion);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.cmbSecurityQuestion);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(12, 134);
+            this.groupBox2.Location = new System.Drawing.Point(12, 122);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(348, 165);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "سوال را انتخاب و به ان پاسخ دهید";
             // 
-            // label2
+            // txtPassword
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(274, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "سوال امنیتی:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Location = new System.Drawing.Point(6, 49);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(234, 21);
-            this.comboBox1.TabIndex = 1;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(6, 20);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(234, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "بررسی";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(246, 79);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "پاسخ سوال امنیتی:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(6, 76);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(234, 20);
-            this.textBox2.TabIndex = 4;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(6, 102);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(234, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "نمایش رمز عبور";
-            this.button3.UseVisualStyleBackColor = true;
+            this.txtPassword.Location = new System.Drawing.Point(6, 131);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(234, 20);
+            this.txtPassword.TabIndex = 7;
             // 
             // label4
             // 
@@ -196,12 +157,65 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "نمایش کلمه عبور:";
             // 
-            // textBox3
+            // button3
             // 
-            this.textBox3.Location = new System.Drawing.Point(6, 131);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(234, 20);
-            this.textBox3.TabIndex = 7;
+            this.button3.Location = new System.Drawing.Point(6, 102);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(234, 23);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "نمایش رمز عبور";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // txtAnswerQuestion
+            // 
+            this.txtAnswerQuestion.Location = new System.Drawing.Point(6, 76);
+            this.txtAnswerQuestion.Name = "txtAnswerQuestion";
+            this.txtAnswerQuestion.Size = new System.Drawing.Size(234, 20);
+            this.txtAnswerQuestion.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(246, 79);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "پاسخ سوال امنیتی:";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(6, 20);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(234, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "بررسی";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // cmbSecurityQuestion
+            // 
+            this.cmbSecurityQuestion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSecurityQuestion.Items.AddRange(new object[] {
+            "نام غذای مورد علاقه شما چیست؟",
+            "نام مکان مورد علاقه شما چیست ؟",
+            "اسم مورد علاقه شما چیست؟",
+            "کشور مورد علاقه شما چیست ؟",
+            "نام معلم اول دبیرستان شما چیست؟",
+            "زمینه ورزشی مورد علاقه شما چیست؟"});
+            this.cmbSecurityQuestion.Location = new System.Drawing.Point(6, 49);
+            this.cmbSecurityQuestion.Name = "cmbSecurityQuestion";
+            this.cmbSecurityQuestion.Size = new System.Drawing.Size(234, 21);
+            this.cmbSecurityQuestion.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(274, 52);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "سوال امنیتی:";
             // 
             // errorProvider1
             // 
@@ -209,17 +223,19 @@
             // 
             // frmForgetPass
             // 
+            this.AcceptButton = this.btnSend;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(372, 306);
+            this.ClientSize = new System.Drawing.Size(372, 297);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSend);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label1);
             this.Name = "frmForgetPass";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "بازیابی";
+            this.Load += new System.EventHandler(this.frmForgetPass_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -233,20 +249,20 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RadioButton rbtnSecurityQuestion;
+        private System.Windows.Forms.RadioButton rbtnEmail;
+        private System.Windows.Forms.RadioButton rbtnSMS;
+        private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtAnswerQuestion;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbSecurityQuestion;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ErrorProvider errorProvider1;
     }

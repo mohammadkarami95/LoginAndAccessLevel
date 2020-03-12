@@ -78,6 +78,8 @@ namespace LoginAccessLevel
             Login.CaptchaImage captcha = new Login.CaptchaImage();
             captcha.RefreshCaptcha(pbxCaptcha);
             LoadUsersInfo();
+
+            cmbSearch.SelectedIndex = 0;
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
@@ -166,7 +168,7 @@ namespace LoginAccessLevel
                 ckbChangeColorEdit.Checked = (bool)dt.Rows[0][2];
                 ckbAddUserEdit.Checked = (bool)dt.Rows[0][1];
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
             }
@@ -247,6 +249,27 @@ namespace LoginAccessLevel
                     MessageBox.Show("در حذف از دیتابیس مشکلی رخ داد", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 }
             }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand();
+            if(cmbSearch.SelectedIndex == 0)
+            {
+                cmd.CommandText = "select * from tblUsers where User_Name=@User_Name";
+                cmd.Parameters.Add("@User_Name", SqlDbType.NVarChar).Value = txtSearch.Text.Trim();
+            }
+            else
+            {
+                cmd.CommandText = "select * from tblUsers where First_Name=@First_Name";
+                cmd.Parameters.Add("@First_Name", SqlDbType.NVarChar).Value = txtSearch.Text.Trim();
+            
+            }
+            cmd.Connection = con;
+            DataTable dt = new DataTable();
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+            data.Fill(dt);
+            dataGridView1.DataSource = dt;
         }
     }
 }
