@@ -50,6 +50,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.cbxSearch = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.cmbSecurityQuestionEdit = new System.Windows.Forms.ComboBox();
             this.btEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -74,10 +78,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.label14 = new System.Windows.Forms.Label();
-            this.cmbSearch = new System.Windows.Forms.ComboBox();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCaptcha)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -280,7 +280,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.btnSearch);
             this.groupBox3.Controls.Add(this.txtSearch);
-            this.groupBox3.Controls.Add(this.cmbSearch);
+            this.groupBox3.Controls.Add(this.cbxSearch);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.cmbSecurityQuestionEdit);
             this.groupBox3.Controls.Add(this.btEdit);
@@ -308,6 +308,44 @@
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "ویرایش مشخصات کلیه کاربران";
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(6, 15);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(188, 23);
+            this.btnSearch.TabIndex = 19;
+            this.btnSearch.Text = "جستجو";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(211, 17);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(171, 20);
+            this.txtSearch.TabIndex = 2;
+            // 
+            // cbxSearch
+            // 
+            this.cbxSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxSearch.FormattingEnabled = true;
+            this.cbxSearch.Items.AddRange(new object[] {
+            "نام کاربری",
+            "نام و نام خانوادگی"});
+            this.cbxSearch.Location = new System.Drawing.Point(401, 17);
+            this.cbxSearch.Name = "cbxSearch";
+            this.cbxSearch.Size = new System.Drawing.Size(172, 21);
+            this.cbxSearch.TabIndex = 18;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(582, 20);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(83, 13);
+            this.label14.TabIndex = 17;
+            this.label14.Text = "جستجو بر اساس:";
             // 
             // cmbSecurityQuestionEdit
             // 
@@ -523,44 +561,6 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(582, 20);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(83, 13);
-            this.label14.TabIndex = 17;
-            this.label14.Text = "جستجو بر اساس:";
-            // 
-            // cmbSearch
-            // 
-            this.cmbSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSearch.FormattingEnabled = true;
-            this.cmbSearch.Items.AddRange(new object[] {
-            "نام کاربری",
-            "نام و نام خانوادگی"});
-            this.cmbSearch.Location = new System.Drawing.Point(391, 17);
-            this.cmbSearch.Name = "cmbSearch";
-            this.cmbSearch.Size = new System.Drawing.Size(182, 21);
-            this.cmbSearch.TabIndex = 18;
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(200, 17);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(185, 20);
-            this.txtSearch.TabIndex = 2;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(6, 15);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(188, 23);
-            this.btnSearch.TabIndex = 19;
-            this.btnSearch.Text = "جستجو";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
             // frmAddUser
             // 
             this.AcceptButton = this.btnAddAdd;
@@ -636,7 +636,7 @@
         private System.Windows.Forms.ComboBox cmbSecurityQuestionEdit;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.ComboBox cmbSearch;
+        private System.Windows.Forms.ComboBox cbxSearch;
         private System.Windows.Forms.Label label14;
     }
 }

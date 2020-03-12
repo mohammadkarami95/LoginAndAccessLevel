@@ -79,7 +79,7 @@ namespace LoginAccessLevel
             captcha.RefreshCaptcha(pbxCaptcha);
             LoadUsersInfo();
 
-            cmbSearch.SelectedIndex = 0;
+            cbxSearch.SelectedIndex = 0;
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
@@ -254,7 +254,7 @@ namespace LoginAccessLevel
         private void btnSearch_Click(object sender, EventArgs e)
         {
             SqlCommand cmd = new SqlCommand();
-            if(cmbSearch.SelectedIndex == 0)
+            if(cbxSearch.SelectedIndex == 0)
             {
                 cmd.CommandText = "select * from tblUsers where User_Name=@User_Name";
                 cmd.Parameters.Add("@User_Name", SqlDbType.NVarChar).Value = txtSearch.Text.Trim();
